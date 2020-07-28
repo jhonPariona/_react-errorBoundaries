@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/_react-errorBoundaries/static/js/main.28fb579e.chunk.js",
-    "main.js.map": "/_react-errorBoundaries/static/js/main.28fb579e.chunk.js.map",
+    "main.js": "/_react-errorBoundaries/static/js/main.d2974c22.chunk.js",
+    "main.js.map": "/_react-errorBoundaries/static/js/main.d2974c22.chunk.js.map",
     "runtime-main.js": "/_react-errorBoundaries/static/js/runtime-main.fd0acd1c.js",
     "runtime-main.js.map": "/_react-errorBoundaries/static/js/runtime-main.fd0acd1c.js.map",
-    "static/js/2.db4bc544.chunk.js": "/_react-errorBoundaries/static/js/2.db4bc544.chunk.js",
-    "static/js/2.db4bc544.chunk.js.map": "/_react-errorBoundaries/static/js/2.db4bc544.chunk.js.map",
+    "static/js/2.b8f91647.chunk.js": "/_react-errorBoundaries/static/js/2.b8f91647.chunk.js",
+    "static/js/2.b8f91647.chunk.js.map": "/_react-errorBoundaries/static/js/2.b8f91647.chunk.js.map",
     "index.html": "/_react-errorBoundaries/index.html",
-    "precache-manifest.f26731a665c12bad878088b32d1ab6ed.js": "/_react-errorBoundaries/precache-manifest.f26731a665c12bad878088b32d1ab6ed.js",
+    "precache-manifest.80d7ec4e579f5170df1751da5c9cb40a.js": "/_react-errorBoundaries/precache-manifest.80d7ec4e579f5170df1751da5c9cb40a.js",
     "service-worker.js": "/_react-errorBoundaries/service-worker.js",
-    "static/js/2.db4bc544.chunk.js.LICENSE.txt": "/_react-errorBoundaries/static/js/2.db4bc544.chunk.js.LICENSE.txt"
+    "static/js/2.b8f91647.chunk.js.LICENSE.txt": "/_react-errorBoundaries/static/js/2.b8f91647.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fd0acd1c.js",
-    "static/js/2.db4bc544.chunk.js",
-    "static/js/main.28fb579e.chunk.js"
+    "static/js/2.b8f91647.chunk.js",
+    "static/js/main.d2974c22.chunk.js"
   ]
 }
