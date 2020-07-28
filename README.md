@@ -22,7 +22,7 @@ Son class components que se usan para <b>capturar errores</b> inesperados en el 
 - Código asyncrónico
 - Server-side rendering
 
-## static getDerivedStateFromError(error)
+## [static getDerivedStateFromError(error)](https://github.com/jhonPariona/_react-errorBoundaries/blob/f4ba0b54470ef5a9a0a2f168c2c93414cd8766fc/src/components/ErrorBoundary.jsx#L8)
 
 [📖 API DOC](https://reactjs.org/docs/react-component.html#static-getderivedstatefromerror)
 
@@ -55,7 +55,9 @@ class ErrorBoundary extends React.Component {
 }
 ```
 
-## componentDidCatch(error, infoError)
+## [componentDidCatch(error, infoError)](https://github.com/jhonPariona/_react-errorBoundaries/blob/f4ba0b54470ef5a9a0a2f168c2c93414cd8766fc/src/components/ErrorBoundary.jsx#L13)
+
+[📖 API Doc](https://reactjs.org/docs/react-component.html#componentdidcatch)
 
 Se usa para ***errores de registro***.
 
