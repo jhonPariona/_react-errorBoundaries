@@ -24,14 +24,56 @@ Son class components que se usan para <b>capturar errores</b> inesperados en el 
 
 ## static getDerivedStateFromError(error)
 
-Se usa para renderizar una interfaz alternativa(fallback UI).
+[📖 API DOC](https://reactjs.org/docs/react-component.html#static-getderivedstatefromerror)
+
+Se usa para ***renderizar una interfaz alternativa(fallback UI)***.
 
 Se llama despues de que el componente lanza una excepción, recibe el error y debe retornar una actualización al estado y luego recién ocurre el render.
 
+```jsx
+class ErrorBoundary extends React.Component {
+  state = {
+    hasError: false,
+  };
+
+  static getDerivedStateFromError() {
+    // retorna una actualización del estado
+    return { hasError: true };
+  }
+
+  render() {
+    // destructuring of state
+    const { hasError } = this.state;
+
+    //fallback UI render
+    if (hasError) {
+      return <p>Opss Ocurrio un error!</p>;
+    }
+
+    return this.props.children;
+  }
+}
+```
+
 ## componentDidCatch(error, infoError)
 
-Se usa para errores de registro.
+Se usa para ***errores de registro***.
 
 Se llama en la fase de commit cuando se renderiza el componente.
+
+```jsx
+class ErrorBoundary extends React.Component {
+  // ...getDerivedStateFromError
+  componentDidCatch(error, infoError) {
+    // podemos usar sentry para hacer el registro de errores
+    console.log("ErrorBoundary -> componentDidCatch -> error🚫", error);
+    console.log(
+      "ErrorBoundary -> componentDidCatch -> infoError ⚠️",
+      infoError.componentStack
+    );
+  }
+  // ...getDerivedStateFromError
+}
+```
 
 > En el caso de un error, puede representar una IU alternativa con una componentDidCatch() llamando a setState, pero esto quedará en desuso en una versión futura. Utilícelo static getDerivedStateFromError() para manejar el renderizado alternativo.
