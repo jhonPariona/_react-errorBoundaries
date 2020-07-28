@@ -26,7 +26,7 @@ Son class components que se usan para <b>capturar errores</b> inesperados en el 
 
 [📖 API DOC](https://reactjs.org/docs/react-component.html#static-getderivedstatefromerror)
 
-Se usa para ***renderizar una interfaz alternativa(fallback UI)***.
+Se usa para **_renderizar una interfaz alternativa(fallback UI)_**.
 
 Se llama despues de que el componente lanza una excepción, recibe el error y debe retornar una actualización al estado y luego recién ocurre el render.
 
@@ -59,7 +59,7 @@ class ErrorBoundary extends React.Component {
 
 [📖 API Doc](https://reactjs.org/docs/react-component.html#componentdidcatch)
 
-Se usa para ***errores de registro***.
+Se usa para **_errores de registro_**.
 
 Se llama en la fase de commit cuando se renderiza el componente.
 
@@ -79,3 +79,14 @@ class ErrorBoundary extends React.Component {
 ```
 
 > En el caso de un error, puede representar una IU alternativa con una componentDidCatch() llamando a setState, pero esto quedará en desuso en una versión futura. Utilícelo static getDerivedStateFromError() para manejar el renderizado alternativo.
+
+### Usando un registrador de errores
+
+#### Sentry
+
+[📖 Documentación](https://docs.sentry.io/platforms/javascript/react/) |
+[☕ Tuto](https://www.daptontechnologies.com/react-error-boundary/)
+
+```bash
+$ yarn add @sentry/react
+```

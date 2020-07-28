@@ -20,7 +20,8 @@ jobs:
         run: |
           npm install
           npm run build
-
+        env:
+          REACT_APP_SENTRY_DSN: ${{ secrets.REACT_APP_SENTRY_DSN }}
       - name: Install SSH Client 🔑
         uses: webfactory/ssh-agent@v0.2.0
         with:
