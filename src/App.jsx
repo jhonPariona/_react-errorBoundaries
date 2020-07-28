@@ -6,7 +6,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 const App = () => (
   <>
     <header style={{ textAlign: "center" }}>
-      <h1>Error Boundary - Límite de error</h1>
+      <h1>Error Boundary / Límite de error</h1>
     </header>
     <ErrorBoundary>
       <p>Componentes encerrados en un limite de error</p>
